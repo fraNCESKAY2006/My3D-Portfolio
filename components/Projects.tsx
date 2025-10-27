@@ -2,9 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PROJECTS } from '../constants';
 import { Project } from '../types';
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub, FaLink, FaImages } from 'react-icons/fa';
 
-const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, index }) => {
+interface ProjectCardProps {
+  project: Project;
+  index: number;
+  onViewGallery: (project: Project) => void;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onViewGallery }) => {
   return (
     <motion.div
       variants={{
@@ -19,6 +25,9 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors">
             <FaGithub className="w-1/2 h-1/2 object-contain"/>
           </a>
+          <div onClick={() => onViewGallery(project)} className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors">
+            <FaImages className="w-1/2 h-1/2 object-contain"/>
+          </div>
            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors">
             <FaLink className="w-1/2 h-1/2 object-contain"/>
           </a>
@@ -39,8 +48,11 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
   );
 };
 
+interface ProjectsProps {
+    onViewGallery: (project: Project) => void;
+}
 
-const Projects: React.FC = () => {
+const Projects: React.FC<ProjectsProps> = ({ onViewGallery }) => {
   return (
      <motion.section
       initial="hidden"
@@ -70,7 +82,7 @@ const Projects: React.FC = () => {
       
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map((project, index) => (
-          <ProjectCard key={`project-${index}`} project={project} index={index} />
+          <ProjectCard key={`project-${index}`} project={project} index={index} onViewGallery={onViewGallery} />
         ))}
       </div>
     </motion.section>

@@ -5,10 +5,11 @@ import { Points, PointMaterial } from '@react-three/drei';
 import * as random from 'maath/random/dist/maath-random.esm';
 
 const Stars: React.FC = (props) => {
-  const ref = useRef<any>();
-  // FIX: The original error "Expected 1 arguments, but got 0" on line 8 was likely a misreported toolchain error for the next line.
-  // The sphere was being recalculated on every render. Using React.useState ensures the star positions are computed only once,
-  // which is more performant and ensures the starfield is stable.
+  // Fix: Pass an initial value of null to useRef to satisfy environments that expect at least one argument.
+  const ref = useRef<any>(null);
+  // FIX: The sphere points were being recalculated on every render, causing performance issues.
+  // By using React.useState with an initializer function, we ensure the star positions
+  // are computed only once when the component mounts.
   const [sphere] = React.useState(() => random.inSphere(new Float32Array(5001), { radius: 1.2 }));
 
   useFrame((state, delta) => {

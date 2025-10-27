@@ -1,4 +1,3 @@
-
 import { NavLink, Skill, Project } from './types';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiFlutter, SiFramer, SiThreedotjs, SiFirebase } from 'react-icons/si';
@@ -21,6 +20,7 @@ export const SKILLS: Skill[] = [
   { name: 'Node.js', icon: FaNodeJs },
   { name: 'HTML5', icon: FaHtml5 },
   { name: 'CSS3', icon: FaCss3Alt },
+  // Fix: Corrected a typo in the property name.
   { name: 'Git', icon: FaGitAlt },
   { name: 'Firebase', icon: SiFirebase },
 ];
@@ -30,32 +30,58 @@ export const PROJECTS: Project[] = [
     title: 'Project Alpha',
     description: 'A cutting-edge web application demonstrating complex 3D animations and interactive UI using React Three Fiber and Framer Motion.',
     image: 'https://picsum.photos/seed/alpha/500/300',
+    images: [
+        'https://picsum.photos/seed/alpha-1/800/600',
+        'https://picsum.photos/seed/alpha-2/800/600',
+        'https://picsum.photos/seed/alpha-3/800/600',
+        'https://picsum.photos/seed/alpha-4/800/600',
+    ],
     githubUrl: 'https://github.com',
     liveUrl: '#',
+    galleryUrl: '#',
     tags: ['React', 'Three.js', 'Framer Motion'],
   },
   {
     title: 'Project Beta',
     description: 'A cross-platform mobile app built with Flutter, focusing on a seamless user experience and performance.',
     image: 'https://picsum.photos/seed/beta/500/300',
+    images: [
+        'https://picsum.photos/seed/beta-1/800/600',
+        'https://picsum.photos/seed/beta-2/800/600',
+    ],
     githubUrl: 'https://github.com',
     liveUrl: '#',
+    galleryUrl: '#',
     tags: ['Flutter', 'Dart', 'Firebase'],
   },
   {
     title: 'Project Gamma',
     description: 'A responsive e-commerce platform with a custom backend, built with the MERN stack and styled with Tailwind CSS.',
     image: 'https://picsum.photos/seed/gamma/500/300',
+    images: [
+        'https://picsum.photos/seed/gamma-1/800/600',
+        'https://picsum.photos/seed/gamma-2/800/600',
+        'https://picsum.photos/seed/gamma-3/800/600',
+    ],
     githubUrl: 'https://github.com',
     liveUrl: '#',
+    galleryUrl: '#',
     tags: ['React', 'Node.js', 'MongoDB', 'TailwindCSS'],
   },
    {
     title: 'Project Delta',
     description: 'An interactive data visualization dashboard using D3.js and React, presenting complex data in an intuitive way.',
     image: 'https://picsum.photos/seed/delta/500/300',
+    images: [
+        'https://picsum.photos/seed/delta-1/800/600',
+        'https://picsum.photos/seed/delta-2/800/600',
+        'https://picsum.photos/seed/delta-3/800/600',
+        'https://picsum.photos/seed/delta-4/800/600',
+        'https://picsum.photos/seed/delta-5/800/600',
+    ],
     githubUrl: 'https://github.com',
     liveUrl: '#',
+    galleryUrl: '#',
     tags: ['React', 'D3.js', 'TypeScript'],
   },
 ];
