@@ -50,9 +50,9 @@ const Hero: React.FC = () => {
             className="px-8 py-3 bg-transparent border-2 border-white rounded-full text-white font-semibold transition-all duration-300 hover:bg-white hover:text-[#050816] glowing-button flex items-center justify-center gap-2 cursor-pointer">
             <FaPaperPlane /> Hire Me
           </a>
-          <a href={placeholderCV} download="frances-mbah-cv.pdf" className="px-8 py-3 royal-gradient rounded-full text-white font-semibold transition-transform duration-300 hover:scale-105 glowing-button flex items-center justify-center gap-2">
+          {/* <a href={placeholderCV} download="frances-mbah-cv.pdf" className="px-8 py-3 royal-gradient rounded-full text-white font-semibold transition-transform duration-300 hover:scale-105 glowing-button flex items-center justify-center gap-2">
             <FiDownload /> Download CV
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </section>

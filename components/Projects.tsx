@@ -28,9 +28,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onViewGallery
           <div onClick={() => onViewGallery(project)} className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors">
             <FaImages className="w-1/2 h-1/2 object-contain"/>
           </div>
-           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors">
+           {/* <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors">
             <FaLink className="w-1/2 h-1/2 object-contain"/>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="mt-5">
