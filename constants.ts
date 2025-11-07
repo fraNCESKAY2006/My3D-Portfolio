@@ -29,10 +29,10 @@ export const PROJECTS: Project[] = [
   {
     title: 'Ai Culinary Alpha',
     description: 'A cutting-edge web application demonstrating the integration of AI with culinary arts, built using React and Three.js for an immersive user experience.',
-    image: '../images/ai1.png',
+    image: '../Public/images/ai1.png',
     images: [
-        '../images/ai1.png',
-        '../images/ai2.png',
+        '../Public/images/ai1.png',
+        '../Public/images/ai2.png',
     ],
     githubUrl: 'https://github.com/fraNCESKAY2006/AI-Receipe-Generator',
     liveUrl: '#',
@@ -42,10 +42,10 @@ export const PROJECTS: Project[] = [
   {
     title: 'ClimeCast',
     description: 'A cross-platform mobile app built with next js, and api that provides real-time weather updates and forecasts with a sleek and intuitive user interface.',
-    image: '../images/climecast1.png',
+    image: '../Public/images/climecast1.png',
     images: [
-        '../images/climecast1.png',
-        '../images/climecast2.png',
+        '../Public/images/climecast1.png',
+        '../Public/images/climecast2.png',
     ],
     githubUrl: 'https://github.com/fraNCESKAY2006/WeatherForecastWeb.git',
     liveUrl: '#',
@@ -55,10 +55,10 @@ export const PROJECTS: Project[] = [
   {
     title: 'MediCare Records System',
     description: 'A comprehensive healthcare records management system that streamlines patient data handling, built with Flutter for cross-platform compatibility and a Firebase backend.',
-    image: '../images/medicare1.png',
+    image: '../Public/images/medicare1.png',
     images: [
-        '../images/medicare1.png',
-        '../images/medicare2.png',
+        '../Public/images/medicare1.png',
+        '../Public/images/medicare2.png',
     ],
     githubUrl: 'https://github.com/fraNCESKAY2006/Patient-Management-System.git',
     liveUrl: '#',
@@ -68,11 +68,11 @@ export const PROJECTS: Project[] = [
    {
     title: 'Crystal Cleaners Website',
     description: 'A modern and responsive website for a cleaning service company, featuring service listings, booking functionality, and customer testimonials, built with React and Tailwind CSS.',
-    image: '../images/crystalclean1.png',
+    image: '../Public/images/crystalclean1.png',
     images: [
-        '../images/crystalclean1.png',
-        '../images/crystalclean2.png',
-        '../images/crystalclean3.png',
+        '../Public/images/crystalclean1.png',
+        '../Public/images/crystalclean2.png',
+        '../Public/images/crystalclean3.png',
     ],
     githubUrl: 'https://github.com/fraNCESKAY2006/Cleaning-Website.git',
     liveUrl: '#',
@@ -83,10 +83,10 @@ export const PROJECTS: Project[] = [
   {
     title: 'LinguaLearn',
     description: 'A language learning mobile app that offers interactive lessons, quizzes, and progress tracking, developed using Flutter for a seamless experience across iOS and Android devices.',
-    image: '../images/lingua1.png',
+    image: '../Public/images/lingua1.png',
     images: [
-        '../images/lingua1.png',
-        '../images/lingua2.png',
+        '../Public/images/lingua1.png',
+        '../Public/images/lingua2.png',
     ],
     githubUrl: 'https://github.com/fraNCESKAY2006/Lingua.git',
     liveUrl: '#',
