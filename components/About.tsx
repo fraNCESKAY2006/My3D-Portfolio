@@ -30,7 +30,7 @@ const About: React.FC = () => {
           <div className="p-1 rounded-full bg-gradient-to-br from-[#6a11cb] to-[#2575fc]">
             <div className="bg-[#050816] p-1 rounded-full">
               <img
-                src="../Public/images/about.jpg"
+                src="/images/about.jpg"
                 alt="Frances Mbah"
                 className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover"
               />
